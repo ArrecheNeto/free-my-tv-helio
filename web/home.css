@@ -682,3 +682,84 @@ body { color: #141413; }
 
 #toast { background: #141413; color: #FAF9F5; box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3); }
 .night #toast { background: #F4F2EC; color: #141413; }
+
+/* MARK: - Tela Livre layout: a cinema-poster pick, two small ones, and the clock always in the header. */
+
+/* The big pick: its photo on the right, its name and line in serif on the left. Focus rings the photo only. */
+.card.hero { top: 246px; height: 420px; }
+.card.hero .img { border-radius: 26px; }
+.card.hero .img::after { border-radius: 26px; }
+.card.hero.focus { -webkit-transform: none; transform: none; }
+.card.hero .meta {
+  left: -760px;
+  top: 96px;
+  width: 680px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8F3F22;
+}
+.card.hero .name {
+  left: -760px;
+  top: 140px;
+  width: 680px;
+  max-width: none;
+  white-space: normal;
+  overflow: hidden;
+  max-height: 210px;
+  font-size: 80px;
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+}
+.card.hero .name::after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 5px;
+  margin-top: 26px;
+  border-radius: 3px;
+  background: #D97757;
+}
+.night .card.hero .meta { color: #E8A48C; }
+
+/* The two small picks: a landscape thumb and the name beside it, on a paper card. */
+.card.small { top: 694px; height: 100px; border-radius: 20px; background: #F0EEE6; box-shadow: inset 0 0 0 1.5px #E3DFD2; }
+.card.small .img { width: 178px; border-radius: 20px 0 0 20px; box-shadow: none; }
+.card.small .img::after { display: none; }
+.card.small .name { left: 200px; top: 30px; max-width: 264px; font-size: 27px; }
+.card.small.focus { -webkit-transform: scale(1.04); transform: scale(1.04); box-shadow: 0 0 0 4px #FAF9F5, 0 0 0 8px #D97757, 0 16px 34px rgba(20, 20, 19, 0.22); }
+.card.small.focus .img { box-shadow: none; }
+.night .card.small { background: #262522; box-shadow: inset 0 0 0 1.5px #34322D; }
+.night .card.small.focus { box-shadow: 0 0 0 4px #1C1B19, 0 0 0 8px #D97757, 0 16px 34px rgba(0, 0, 0, 0.5); }
+
+/* With picks, the clock moves to the header, left of the round buttons. Without them it stays big. */
+body #clock { display: block; }
+body:not(.no-picks) #clock {
+  left: auto;
+  right: 372px;
+  top: 58px;
+  font-size: 66px;
+  text-align: right;
+}
+body:not(.no-picks) #clock .date { font-size: 20px; margin-top: 8px; }
+/* A "Watch" button under the big pick's name: outlined at rest, filled clay when the pick has the focus. */
+.card.hero::after {
+  content: '\25B6\00A0\00A0 Assistir';
+  position: absolute;
+  left: -760px;
+  top: 316px;
+  height: 64px;
+  padding: 0 34px;
+  border-radius: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 60px;
+  color: #141413;
+  border: 2px solid #D6D2C4;
+  -webkit-transition: background-color 0.17s, border-color 0.17s;
+  transition: background-color 0.17s, border-color 0.17s;
+}
+.card.hero.focus::after { background: #D97757; border-color: #D97757; box-shadow: 0 0 0 4px #FAF9F5, 0 0 0 7px #D97757; }
+.night .card.hero::after { color: #F4F2EC; border-color: #45423C; }
+.night .card.hero.focus::after { color: #141413; box-shadow: 0 0 0 4px #1C1B19, 0 0 0 7px #D97757; }

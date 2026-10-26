@@ -4,6 +4,9 @@
 
 <p align="center"><b>Uma tela inicial sem anúncios para TVs Samsung, com instalador de dois cliques no Windows.</b></p>
 
+<p align="center"><img src="assets/preview.webp" width="880" alt="Navegando pelo Tela Livre: fileira de apps, destaque com botão Assistir, abas, gaveta com entradas e clima, e o modo noite"></p>
+<p align="center"><sub>Navegando pela tela com o controle. Os destaques mostram as capas reais dos filmes e séries em alta; aqui as imagens são de exemplo.</sub></p>
+
 A tela inicial das TVs Samsung vem cheia de vitrine que você não pediu. O Tela Livre é um app que vira a sua tela de
 entrada: seus apps numa fileira, clima da sua cidade, relógio e, se quiser, os filmes e séries em alta só dos apps que
 você já tem. Creme de dia, grafite quente de noite, seguindo o pôr do sol de verdade.

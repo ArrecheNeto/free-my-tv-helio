@@ -419,9 +419,10 @@
     if (same && holder.children.length === list.length) return;
     cards = list;
     holder.innerHTML = '';
-    var rects = [[80, 1040], [1160, 320], [1520, 320]];
+    // Tela Livre: one big pick (its title in the left column, its photo on the right) and two small ones below it.
+    var rects = [[840, 1000], [840, 484], [1356, 484]];
     for (var c = 0; c < list.length; c++) {
-      var p = list[c], card = el('div', 'card', holder);
+      var p = list[c], card = el('div', c === 0 ? 'card hero' : 'card small', holder);
       card.style.left = rects[c][0] + 'px';
       card.style.width = rects[c][1] + 'px';
       var img = el('div', 'img', card);
