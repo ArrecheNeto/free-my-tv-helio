@@ -2,9 +2,9 @@
 chcp 65001 >nul
 setlocal
 cd /d "%~dp0"
-title Free My TV - instalador Samsung
+title Tela Livre - instalador
 echo.
-echo  ===== Free My TV para TVs Samsung (2016 a 2022) =====
+echo  ===== Tela Livre: tela inicial sem anuncios para TVs Samsung (2016 a 2022) =====
 echo.
 set TVIP=
 if exist tv-ip.txt set /p TVIP=<tv-ip.txt
@@ -25,7 +25,7 @@ py -3 tizen\sign.py 2>> instalar-log.txt || goto erro
 echo  [4/4] Enviando pra TV. Olhe a TV: se aparecer algum aviso, aceite.
 py -3 tizen\install.py %TVIP% >> instalar-log.txt 2>&1 || goto erro
 echo.
-echo  PRONTO! O Free My TV deve abrir na TV agora.
+echo  PRONTO! O Tela Livre deve abrir na TV agora.
 echo.
 pause
 exit /b 0

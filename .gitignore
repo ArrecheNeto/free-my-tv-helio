@@ -1,19 +1,11 @@
-# Your settings and signing key stay on your machine
+# Suas configuracoes ficam so no seu PC
 config.properties
-*.keystore
-*.idsig
-# An LG TV's app list and icons (webos/apps.py)
-webos-apps.local.json
-webos-icons.local/
-
-# Build output
+tv-ip.txt
+# Gerados
 out/
-*.apk
-*.ipk
-!docs/webos/FreeMyTV-webos-*.ipk
 *.wgt
+*.tmp
+instalar-log.txt
 __pycache__/
-
-# macOS
-.DS_Store
 tools/.i18n-cache.json
+.DS_Store

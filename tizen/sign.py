@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Signs FreeMyTV-tizen.wgt for Samsung TVs from 2016 to 2022 (Tizen 2.4 to 6.5), without Tizen Studio.
+"""Signs TelaLivre.wgt for Samsung TVs from 2016 to 2022 (Tizen 2.4 to 6.5), without Tizen Studio.
 
     python3 tizen/sign.py          # the certificate password comes from FMTV_CERT_PASS, or is asked for
 
@@ -27,7 +27,7 @@ from cryptography.hazmat.primitives.serialization import pkcs12
 from cryptography.x509.oid import ExtendedKeyUsageOID, NameOID
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-WGT = os.path.join(ROOT, 'FreeMyTV-tizen.wgt')
+WGT = os.path.join(ROOT, 'TelaLivre.wgt')
 HOME = os.path.join(os.path.expanduser('~'), '.freemytv-tizen')
 CERTS = os.path.join(HOME, 'certs')
 AUTHOR_KEY = os.path.join(HOME, 'author-key.pem')

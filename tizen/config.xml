@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="https://freemytv.io/tizen" version="1.2.0" viewmodes="maximized">
-    <tizen:application id="FreeMyTVio.FreeMyTV" package="FreeMyTVio" required_version="2.4"/>
-    <name>Free My TV</name>
-    <author href="https://freemytv.io">Free My TV</author>
-    <description>A fast, ad-free home screen.</description>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="https://github.com/ArrecheNeto/tela-livre" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="TelaLivreH.TelaLivre" package="TelaLivreH" required_version="2.4"/>
+    <name>Tela Livre</name>
+    <author href="https://github.com/ArrecheNeto/tela-livre">Helio Arreche</author>
+    <description>Tela inicial sem anuncios para TVs Samsung.</description>
     <content src="index.html"/>
     <icon src="icon.png"/>
     <feature name="http://tizen.org/feature/screen.size.all"/>
